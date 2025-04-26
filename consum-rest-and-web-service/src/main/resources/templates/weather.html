@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>El Temps</title>
+</head>
+<body>
+<h1>Consulta del Temps</h1>
+
+<form action="/" method="get">
+    <input type="text" name="city" placeholder="Introdueix la ciutat" required>
+    <button type="submit">Cercar</button>
+</form>
+
+<div th:if="${weather != null}">
+    <h2>Resultats per: <span th:text="${weather.name}"></span></h2>
+    <p>Temperatura: <span th:text="${weather.main.temp}"></span> °C</p>
+    <p>Humitat: <span th:text="${weather.main.humidity}"></span>%</p>
+</div>
+
+<div th:if="${error != null}">
+    <p th:text="${error}" style="color: red;"></p>
+</div>
+</body>
+</html>

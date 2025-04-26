@@ -1,0 +1,5 @@
+com/example/api/model/Weather.class
+com/example/api/model/WeatherResponse.class
+com/example/api/controller/WeatherController.class
+com/example/api/Application.class
+com/example/api/service/WeatherService.class
