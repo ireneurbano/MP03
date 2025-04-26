@@ -1,0 +1,25 @@
+VBox {
+    -fx-padding: 20;
+    -fx-background-color: #f4f4f4;
+}
+
+Button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+Button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Estilo para las tareas completadas */
+.completed {
+    -fx-strikethrough: true;
+    -fx-text-fill: #7f8c8d; /* Color gris para las tareas completadas */
+}
+
+/* Estilo para las tareas no completadas */
+.pending {
+    -fx-text-fill: black;
+}
